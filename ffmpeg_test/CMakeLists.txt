@@ -9,7 +9,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/ffmpeg-4.4.1-full_build-shared/i
 
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/ffmpeg-4.4.1-full_build-shared/lib)
 
-add_executable(ffmpeg_test main.cpp h264toyuv.cpp extractH264FromMP4.cpp extracAACFromMP4.cpp)
+add_executable(ffmpeg_test main.cpp h264toyuv.cpp extractH264FromMP4.cpp extracAACFromMP4.cpp aactopcm.cpp)
 
 
 

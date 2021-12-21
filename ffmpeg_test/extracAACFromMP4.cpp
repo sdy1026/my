@@ -17,8 +17,26 @@ static FILE* g_destFile = NULL;
 
 //音频数据,需要和mp4文件中的音频一致
 static int audioType = 2;	//AAC LC
-static int sampleIndex = 3;	//48000
-static int channelConfig = 2;	//双通道
+static int sampleIndex = 4;	//44100
+/*
+0: 96000 Hz
+1 : 88200 Hz
+2 : 64000 Hz
+3 : 48000 Hz
+4 : 44100 Hz
+5 : 32000 Hz
+6 : 24000 Hz
+7 : 22050 Hz
+8 : 16000 Hz
+9 : 12000 Hz
+10 : 11025 Hz
+11 : 8000 Hz
+12 : 7350 Hz
+13 : Reserved
+14 : Reserved
+15 : frequency is written explictly
+*/
+static int channelConfig = 1;	//双通道
 
 //添加ADTS(audio data transport stream)-长度为7
 void addHeader(char header[], int len)

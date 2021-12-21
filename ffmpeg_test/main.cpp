@@ -43,16 +43,21 @@ extern "C"
 extern int extractH264FromMP4(const char* src, const char* dst);
 extern void h264toyuv(const char* src, const char* dst);
 extern int extracAACFromMP4(const char* src, const char* dst);
+extern int AACtoPCM(const char* src, const char* dst);
 
 int main(int argc, char** argv)
 {
 	const char* srcName = "C:/Users/wangzhi/Desktop/shenhua.mp4";
+
 	const char* h264Name = "C:/Users/wangzhi/Desktop/h264.h264";
 	const char* yuvName = "C:/Users/wangzhi/Desktop/yuv.yuv";
-	const char* aacName = "C:/Users/wangzhi/Desktop/aac";
+
+	const char* aacName = "C:/Users/wangzhi/Desktop/aac.aac";
+	const char* pcmName = "C:/Users/wangzhi/Desktop/pcm.pcm";
  //   extractH264FromMP4(srcName, h264Name);
  //   h264toyuv(h264Name, yuvName);
-	extracAACFromMP4(srcName, aacName);
+//	extracAACFromMP4(srcName, aacName);
+	AACtoPCM(aacName, pcmName);
     return 0;
 }
 
