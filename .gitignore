@@ -25,3 +25,5 @@ ffmpeg_test/build/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.c
 ffmpeg_test/build/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.cpp
 ffmpeg_test/build/CMakeFiles/3.17.5/VCTargetsPath.txt
 ffmpeg_test/build/CMakeFiles/TargetDirectories.txt
+ffmpeg_test/build/x64/Debug/ZERO_CHECK/ZERO_CHECK.vcxproj.FileListAbsolute.txt
+ffmpeg_test/build/ffmpeg_test.dir/Debug/ffmpeg_test.vcxproj.FileListAbsolute.txt

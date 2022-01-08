@@ -44,7 +44,7 @@ extern int extractH264FromMP4(const char* src, const char* dst);
 extern void h264toyuv(const char* src, const char* dst);
 extern int extracAACFromMP4(const char* src, const char* dst);
 extern int AACtoPCM(const char* src, const char* dst);
-extern int enumAllDevice();
+extern void getAllDevNames();
 extern int writeCameraVideoStream();
 
 int main(int argc, char** argv)
@@ -62,7 +62,7 @@ int main(int argc, char** argv)
 	//extracAACFromMP4(srcName, aacName);
 	//AACtoPCM(aacName, pcmName);
 	//enumAllDevice();
-	writeCameraVideoStream();
+	getAllDevNames();
     return 0;
 }
 
